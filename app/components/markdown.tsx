@@ -86,6 +86,7 @@ export function PreCode(props: { children: any }) {
 }
 
 function _MarkDownContent(props: { content: string }) {
+  console.log(333, props.content);
   return (
     <ReactMarkdown
       remarkPlugins={[RemarkMath, RemarkGfm, RemarkBreaks]}
@@ -154,6 +155,8 @@ export function Markdown(
   };
 
   setTimeout(() => checkInView(), 1);
+
+  console.log(88888, props.content);
 
   return (
     <div
